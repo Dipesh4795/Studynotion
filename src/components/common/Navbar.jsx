@@ -6,9 +6,8 @@ import {
   AiOutlineShoppingCart,
   AiOutlineMenu,
 } from "react-icons/ai";
-import { BiCategory, BiDetail } from "react-icons/bi";
-import { RxCross2 } from "react-icons/rx";
-import { MdOutlineCancel } from "react-icons/md";
+import { BiDetail } from "react-icons/bi";
+
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
 
@@ -24,7 +23,7 @@ import { apiConnector } from "../../services/apiconnector";
 import { categories } from "../../services/apis";
 import { ACCOUNT_TYPE } from "../../utils/constants";
 import ProfileDropdown from "../core/Authpage/ProfileDropDown";
-import { SlArrowDown, SlArrowUp } from "react-icons/sl";
+
 import { VscDashboard, VscSignIn, VscSignOut } from "react-icons/vsc";
 import HamburgerMenu from "./HamburgerMenu";
 import { logout } from "../../services/operations/authAPI";
@@ -36,7 +35,6 @@ function Navbar() {
   const { user } = useSelector((state) => state.profile);
   const { totalItems } = useSelector((state) => state.cart);
   const location = useLocation();
-  const menuref = useRef(null);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();

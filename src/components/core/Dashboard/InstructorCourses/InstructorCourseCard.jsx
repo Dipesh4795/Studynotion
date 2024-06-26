@@ -8,14 +8,14 @@ import { GiPriceTag } from "react-icons/gi";
 import { HiClock } from "react-icons/hi";
 import { useState } from "react";
 import ConfirmationModal from "../../../common/ConfirmationModal";
-import { setCourse, setEditCourse } from "../../../../slices/courseSlice";
+// import { setCourse, setEditCourse } from "../../../../slices/courseSlice";
 
 import {
   deleteCourse,
   fetchInstructorCourses,
 } from "../../../../services/operations/courseDetailsAPI";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 const InstructorCourseCard = ({ course, setCourses }) => {
   let totalDurationInSeconds = 0;
   course.coursecontent.forEach((content) => {
@@ -48,7 +48,7 @@ const InstructorCourseCard = ({ course, setCourses }) => {
     setConfirmationModal(null);
     setLoading(false);
   };
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const navigate = useNavigate();
   const { token } = useSelector((state) => state.auth);
   const [loading, setLoading] = useState(false);

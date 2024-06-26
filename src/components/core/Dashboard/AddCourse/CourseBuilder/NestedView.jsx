@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
-import { AiFillCaretUp } from "react-icons/ai";
+
 import { FaPlus } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import { RiDeleteBin6Line } from "react-icons/ri";

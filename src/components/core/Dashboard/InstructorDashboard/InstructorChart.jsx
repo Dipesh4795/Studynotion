@@ -30,7 +30,6 @@ export default function InstructorChart({ courses }) {
       },
     ],
   };
-  const width = window.innerWidth - 200;
 
   // Data for the chart displaying income information
   const chartIncomeData = {

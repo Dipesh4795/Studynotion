@@ -1,4 +1,3 @@
-import { FiTrash2 } from "react-icons/fi";
 import { AiFillDelete } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";

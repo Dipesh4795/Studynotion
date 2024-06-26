@@ -26,11 +26,6 @@ const PORT = process.env.PORT || 4000;
 
 database.connect();
 
-// app.use(express.json());
-// app.use((req,res)=>{
-//       console.log(req);
-// })
-// app.use(bodyParser)
 app.use(express.json());
 app.use(cookieParser());
 app.use(
