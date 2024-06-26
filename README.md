@@ -1,4 +1,4 @@
-# StudyNotion Online Education Platform (MERN App) [Website Link](https://studynotion-three-chi.vercel.app)
+# StudyNotion Online Education Platform (MERN App) [Website Link](https://studynotion-dipesh-kumar-guptas-projects.vercel.app/)
 
 ![Main Page](images/mainpage.png)
 
