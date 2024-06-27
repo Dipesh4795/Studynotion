@@ -120,7 +120,7 @@ const About = () => {
           Reviews from other learners
         </h1>
 
-        <div className="w-[80%]">
+        <div className="w-[80%] hidden md:block">
           <ReviewSlider />
         </div>
       </div>
