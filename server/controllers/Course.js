@@ -58,13 +58,12 @@ exports.createCourse = async (req, res) => {
         message: "instructor not found",
       });
     }
-    // console.log("kya kaam");
 
     const thumbnailImage = await uploadImageToCloudinary(
       thumbnail,
       process.env.FOLDER_NAME
     );
-    // console.log("yha per");
+
     const newCourse = await Course.create({
       coursename: courseName,
       coursedescription: courseDescription,

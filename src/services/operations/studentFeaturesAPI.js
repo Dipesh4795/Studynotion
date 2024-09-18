@@ -128,7 +128,7 @@ async function verifyPayment(bodyData, token, navigate, dispatch) {
     if (!response.data.success) {
       throw new Error(response.data.message);
     }
-    toast.success("payment Successful, ypou are addded to the course");
+    toast.success("payment Successful, you are addded to the course");
     navigate("/dashboard/enrolled-courses");
     dispatch(resetCart());
   } catch (error) {
