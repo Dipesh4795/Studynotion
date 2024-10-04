@@ -76,21 +76,21 @@ export default function MyProfile() {
         </div>
 
         <div className="flex max-w-[500px] flex-col  gap-y-4 justify-between">
-          <div className="flex sm:flex-row sm:justify-between flex-col gap-y-5">
+          <div className="flex sm:flex-row sm:justify-between flex-col gap-y-5 pr-9">
             <div>
               <p className="mb-2 text-sm text-richblack-600">First Name</p>
               <p className="text-sm font-medium text-richblack-5">
                 {user?.firstname}
               </p>
             </div>
-            <div className="pr-[63px]">
+            <div className="">
               <p className="mb-2 text-sm text-richblack-600">Last Name</p>
               <p className="text-sm font-medium text-richblack-5">
                 {user?.lastname}
               </p>
             </div>
           </div>
-          <div className="flex min-[600px]:flex-row min-[600px]:justify-between flex-col gap-y-5">
+          <div className="flex min-[600px]:flex-row min-[600px]:justify-between flex-col gap-y-5 ">
             <div>
               <p className="mb-2 text-sm text-richblack-600">Email Address </p>
               <p className="text-sm font-medium text-richblack-5">

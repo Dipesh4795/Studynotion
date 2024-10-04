@@ -25,13 +25,12 @@ export default function ChipInput({
       // console.log(course)
       setChips(course?.tags);
     }
-    register(name, { required: true, validate: (value) => value.length > 0 });
+    // register(name, { required: true, validate: (value) => value.length > 0 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setValue(name, chips);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chips]);
 
   // Function to handle user input when chips are added
@@ -96,7 +95,7 @@ export default function ChipInput({
           className="form-style w-full"
         />
       </div>
-      {/* Render an error message if the input is required and not filled */}
+
       {errors[name] && (
         <span className="ml-2 text-xs tracking-wide text-pink-200">
           {label} is required

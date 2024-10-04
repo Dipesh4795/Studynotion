@@ -38,9 +38,10 @@ export default function Upload({
   });
 
   const previewFile = (file) => {
-    // console.log(file)
+    console.log(file);
     const reader = new FileReader();
     reader.readAsDataURL(file);
+    console.log(reader);
     reader.onloadend = () => {
       setPreviewSource(reader.result);
     };
@@ -48,12 +49,10 @@ export default function Upload({
 
   useEffect(() => {
     register(name, { required: true });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [register]);
 
   useEffect(() => {
     setValue(name, selectedFile);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedFile, setValue]);
 
   return (
